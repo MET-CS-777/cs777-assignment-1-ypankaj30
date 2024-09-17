@@ -58,10 +58,14 @@ if __name__ == "__main__":
     if platform.system() == 'Darwin':
         is_local = True
     
-    is_local = False
+    #is_local = False
     if is_local == True:
         #Local mode
         file_name = "file:/Users/pankajyawale/Documents/Pankaj/BostonUniversity/bu-work/cs777-bigdata-analysis/assignments/1/work/cs777-assignment-1-ypankaj30/taxi-data-sorted-small.csv.bz2"
+        # Authenticate using this command to access the file from GCS on local
+        # Didn't work
+        # gcloud auth application-default login
+        #file_name = "gs://met-cs-777-data/taxi-data-sorted-small.csv.bz2"
     else:
         file_name = "gs://met-cs-777-data/taxi-data-sorted-small.csv.bz2"
 
