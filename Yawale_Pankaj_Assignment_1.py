@@ -126,7 +126,7 @@ if __name__ == "__main__":
     if is_local == True:
         #Local mode
         #file_name = "file:/Users/pankajyawale/Documents/Pankaj/BostonUniversity/bu-work/cs777-bigdata-analysis/assignments/1/material/taxi-data-sorted-small.csv.bz2"
-        file_name = "file:" + sys.argv[1]
+        file_name = sys.argv[1]
     else:
         file_name = "gs://met-cs-777-data/taxi-data-sorted-large.csv.bz2"
 
